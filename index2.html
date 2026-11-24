@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ACADEXA | Student Performance Analysis</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f5fb;
+    color: #20243a;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #11152e;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #a99aff;
+}
+
+nav span {
+    font-size: 13px;
+    color: #d1d5e8;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: linear-gradient(120deg, #171c42, #5142a5);
+    color: white;
+    padding: 85px 10%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #b8a9ff;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #e0e1f2;
+    font-size: 17px;
+}
+
+.tag {
+    display: inline-block;
+    background: #ffffff20;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* MAIN CONTENT */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 55px 25px;
+}
+
+.section-title {
+    font-size: 27px;
+    margin-bottom: 12px;
+    color: #20264b;
+}
+
+.section-desc {
+    color: #72778c;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 30px 0 55px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e8e8f1;
+    box-shadow: 0 5px 20px #20264b08;
+}
+
+.card h3 {
+    color: #5142a5;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #777b8e;
+    font-size: 14px;
+}
+
+/* TECHNOLOGY */
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0 55px;
+}
+
+.tech-item {
+    background: white;
+    border: 1px solid #e5e3f5;
+    padding: 17px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #5142a5;
+}
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 25px 0 55px;
+    box-shadow: 0 5px 20px #20264b08;
+}
+
+th {
+    background: #25264f;
+    color: white;
+    text-align: left;
+    padding: 17px;
+}
+
+td {
+    padding: 15px 17px;
+    border-bottom: 1px solid #eeeeF4;
+    color: #555b70;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background: #f5f3ff;
+}
+
+/* OBJECTIVE */
+
+.objective {
+    background: linear-gradient(120deg, #ebe8ff, #f6f4ff);
+    padding: 35px;
+    border-radius: 16px;
+    border-left: 5px solid #6654bd;
+    margin-bottom: 40px;
+}
+
+.objective p {
+    color: #62657d;
+}
+
+/* FOOTER */
+
+footer {
+    background: #11152e;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer p {
+    color: #b9bdd1;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 55px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        padding: 17px 6%;
+    }
+
+    .container {
+        padding: 35px 18px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 11px 8px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="logo">ACADEXA.</div>
+    <span>STUDENT PERFORMANCE SYSTEM</span>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="tag">BEGINNER PROGRAMMING PROJECT | 2026</div>
+
+    <h1>Understand Performance.<br>
+    <span>Discover Potential.</span></h1>
+
+    <p>
+        ACADEXA is a student performance tracking project
+        designed to simplify academic result calculations
+        through fundamental programming concepts.
+    </p>
+
+</section>
+
+<!-- MAIN -->
+
+<main class="container">
+
+    <h2 class="section-title">About the Project</h2>
+
+    <p class="section-desc">
+        A simple academic performance tracking system
+        developed using C++ and HTML.
+    </p>
+
+    <!-- FEATURES -->
+
+    <h2 class="section-title">Core Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>01. Student Details</h3>
+            <p>Accepts student name and roll number.</p>
+        </div>
+
+        <div class="card">
+            <h3>02. Marks Management</h3>
+            <p>Accepts marks for five different subjects.</p>
+        </div>
+
+        <div class="card">
+            <h3>03. Result Calculation</h3>
+            <p>Calculates total marks and percentage automatically.</p>
+        </div>
+
+        <div class="card">
+            <h3>04. Grade Evaluation</h3>
+            <p>Classifies academic performance using grade criteria.</p>
+        </div>
+
+        <div class="card">
+            <h3>05. Result Status</h3>
+            <p>Determines whether the student has passed or failed.</p>
+        </div>
+
+        <div class="card">
+            <h3>06. Simple Interface</h3>
+            <p>Provides a structured webpage for project information.</p>
+        </div>
+
+    </div>
+
+    <!-- TECHNOLOGIES -->
+
+    <h2 class="section-title">Technology Stack</h2>
+
+    <p class="section-desc">
+        Built using fundamental programming and web development tools.
+    </p>
+
+    <div class="tech">
+
+        <div class="tech-item">C++ Programming</div>
+        <div class="tech-item">HTML5</div>
+        <div class="tech-item">CSS3</div>
+
+    </div>
+
+    <!-- GRADING -->
+
+    <h2 class="section-title">Grading Criteria</h2>
+
+    <p class="section-desc">
+        Academic grade classification used by the program.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>90 – 100</td>
+            <td>A+</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>80 – 89.99</td>
+            <td>A</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>70 – 79.99</td>
+            <td>B</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>60 – 69.99</td>
+            <td>C</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>35 – 59.99</td>
+            <td>D</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Below 35 in any subject</td>
+            <td>F</td>
+            <td>Fail</td>
+        </tr>
+
+    </table>
+
+    <!-- OBJECTIVE -->
+
+    <div class="objective">
+
+        <h2 class="section-title">Project Objective</h2>
+
+        <p>
+            To apply fundamental C++ programming concepts
+            to develop a simple student result management
+            system while improving logical thinking,
+            problem-solving and basic web development skills.
+        </p>
+
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>ACADEXA.</h2>
+
+    <p>Turning Student Performance into Meaningful Insights.</p>
+
+    <p>Developed using C++ and HTML | 2026</p>
+
+</footer>
+
+</body>
+</html>
